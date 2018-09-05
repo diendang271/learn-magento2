@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Craig_AdminMenu::first_level_menu"
+             title="Craig Admin Menu"
+             module="Craig_AdminMenu"
+             sortOrder="20"
+             resource="Magento_Backend::content"/>
+        <add id="Craig_AdminMenu::second_level_menu"
+             title="Submenu"
+             module="Craig_AdminMenu"
+             sortOrder="1"
+             action="menuitem/index/index"
+             parent="Craig_AdminMenu::first_level_menu"
+             resource="Magento_Backend::content"/>
+    </menu>
+</config>
