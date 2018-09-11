@@ -50,5 +50,11 @@ class InstallData implements InstallDataInterface
                 'apply_to' => ''
             ]
         );
+
+//        // Remove attribute programmatically
+//        $eavSetup->removeAttribute(
+//          \Magento\Catalog\Model\Product::ENTITY,
+//          'sample_attribute'
+//        );
     }
 }
